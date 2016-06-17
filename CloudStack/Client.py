@@ -40,6 +40,9 @@ class Client(BaseClient):
 
         return self.request('createNetworkOffering', args)
  
+    def addImageStore(self, args={}):
+
+        return self.request('addImageStore', args)
 
     def updateNetworkOffering(self, args={}):
         '''
