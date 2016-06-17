@@ -43,6 +43,10 @@ class Client(BaseClient):
     def addImageStore(self, args={}):
 
         return self.request('addImageStore', args)
+    
+    def listImageStores(self, args={}):
+
+        return self.request('listImageStores', args)
 
     def updateNetworkOffering(self, args={}):
         '''
