@@ -47,6 +47,14 @@ class Client(BaseClient):
     def listImageStores(self, args={}):
 
         return self.request('listImageStores', args)
+    
+    def listInternalLoadBalancerElements(self, args={}):
+
+        return self.request('listInternalLoadBalancerElements', args)    
+    
+    def configureInternalLoadBalancerElement(self, args={}):
+
+        return self.request('configureInternalLoadBalancerElement', args)        
 
     def updateNetworkOffering(self, args={}):
         '''
