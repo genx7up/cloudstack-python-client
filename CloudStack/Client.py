@@ -40,6 +40,10 @@ class Client(BaseClient):
 
         return self.request('createNetworkOffering', args)
  
+    def listVPCOfferings(self, args={}):
+
+        return self.request('listVPCOfferings', args)
+        
     def listVPCs(self, args={}):
 
         return self.request('listVPCs', args)
