@@ -40,6 +40,14 @@ class Client(BaseClient):
 
         return self.request('createNetworkOffering', args)
  
+    def listVPCs(self, args={}):
+
+        return self.request('listVPCs', args)
+    
+    def createVPC(self, args={}):
+
+        return self.request('createVPC', args)
+        
     def addImageStore(self, args={}):
 
         return self.request('addImageStore', args)
